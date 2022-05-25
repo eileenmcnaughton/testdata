@@ -326,7 +326,7 @@ return [
     'params' => [
       'version' => 4,
       'values' => [
-        'option_group_id.name' => 'AddressCustom_Address_',
+        'option_group_id.name' => 'AddressCustom_Address_Radio',
         'label' => 'Radio3',
         'value' => 'three',
         'name' => 'Radio3',
@@ -353,7 +353,7 @@ return [
     'params' => [
       'version' => 4,
       'values' => [
-        'option_group_id.name' => 'AddressCustom_Address_',
+        'option_group_id.name' => 'AddressCustom_Address_Radio',
         'label' => 'Radio4',
         'value' => 'four',
         'name' => 'Radio4',
