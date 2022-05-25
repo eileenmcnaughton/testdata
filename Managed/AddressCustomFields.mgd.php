@@ -242,7 +242,7 @@ return [
     ],
   ],
   [
-    'name' => 'OptionGroup_AddressCustom_Address_',
+    'name' => 'OptionGroup_AddressCustom_Address_Radio',
     'entity' => 'OptionGroup',
     'cleanup' => 'unused',
     'update' => 'unmodified',
@@ -272,7 +272,7 @@ return [
     'params' => [
       'version' => 4,
       'values' => [
-        'option_group_id.name' => 'AddressCustom_Address_',
+        'option_group_id.name' => 'AddressCustom_Address_Radio',
         'label' => 'Radio1',
         'value' => '1',
         'name' => 'Radio1',
@@ -299,7 +299,7 @@ return [
     'params' => [
       'version' => 4,
       'values' => [
-        'option_group_id.name' => 'AddressCustom_Address_',
+        'option_group_id.name' => 'AddressCustom_Address_Radio',
         'label' => 'Radio2',
         'value' => '2',
         'name' => 'Radio2',

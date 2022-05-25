@@ -34,7 +34,7 @@ foreach ($fields as $field) {
 
 foreach ($mappings as $mapping) {
   $entities[] = [
-    'name' => $mapping['name'],
+    'name' => 'AddressCustom' . $mapping['column_number'] . $mapping['field_name'],
     'entity' => 'MappingField',
     'cleanup' => 'unused',
     'update' => 'unmodified',
