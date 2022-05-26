@@ -1,0 +1,7 @@
+first_name,last_name,Contact Sub Type,External Identifier,Email,Phone,Note
+Alice,Alison,Team,,,,"Should fail, bad subtype"
+Bob,Bobson,Student,,bob.com,,"Should fail, bad email"
+Carol,Carolson,,,,,Should work
+,,,1234,,,"Should fail, no name or email"
+Dave,,,,,,"Should fail, incomplete name"
+Eve,Everson,,,eve@everson.com,,Should work
