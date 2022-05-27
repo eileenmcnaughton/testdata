@@ -1,0 +1,2 @@
+activity_date_time,activity_id,activity_status_id,activity_type_id,activity_is_deleted,activity_campaign_id,target_contact_id,activity_details,activity_duration,email,activity_engagement_level,external_identifier,is_star,is_current_revision,activity_location,priority_id,source_contact_id,activity_subject,activity_is_test
+2022-03-01 15:56:23,,Completed,Meeting,No,,,lots of text,1,demo@example.com,1,,yes,,Here,Urgent,,Subject,0
