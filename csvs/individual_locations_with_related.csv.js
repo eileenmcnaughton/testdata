@@ -1,0 +1,57 @@
+CRM.api4('Mapping', 'create', {
+  values: {"name":"individual_locations_with_related", "mapping_type_id:name":"Import Contact", "description":"individual_locations_with_related"}
+}).then (
+  CRM.api4('MappingField', 'save', {
+    records: [
+      {"name":"first_name", "column_number":0},
+      {"name":"last_name", "column_number":1},
+      {"name":"birth_date", "column_number":2},
+      {"name":"street_address", "column_number":3, "location_type_id": 1},
+      {"name":"city", "column_number":4, "location_type_id": 1},
+      {"name":"postal_code", "column_number":5, "location_type_id": 1},
+      {"name":"country", "column_number":6, "location_type_id": 1},
+      {"name":"state_province", "column_number":7, "location_type_id": 1},
+      {"name":"email", "column_number":8, "location_type_id": 1},
+      {"name":"signature_text", "column_number":9, "location_type_id": 1},
+      {"name":"im", "column_number":10, "location_type_id": 1, "im_provider_id": 1},
+      {"name":"url", "column_number":11,"website_type_id": 1},
+      {"name":"phone", "column_number":12,"phone_type_id": 1, "location_type_id": 1},
+      {"name":"phone_ext", "column_number":13,"phone_type_id": 1, "location_type_id": 1},
+      {"name": "first_name", "column_number": 14, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "last_name", "column_number": 15, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "street_address", "column_number": 16, "location_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "city", "column_number": 17, "location_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "country", "column_number": 18, "location_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "state_province", "column_number": 19, "location_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "email", "column_number": 20, "location_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "signature_html", "column_number": 21, "location_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "im","column_number": 22, "location_type_id": 1,"im_provider_id": 1,"relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "url","column_number": 23, "phone_type_id": null, "website_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "phone", "column_number": 24, "location_type_id": 2, "phone_type_id": 1,"relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "phone_ext", "column_number": 25, "location_type_id": 2, "phone_type_id": 1, "relationship_type_id": 1, "relationship_direction": "a_b"},
+      {"name": "phone", "column_number": 26, "location_type_id": 1, "phone_type_id": 1},
+      {"name": "phone","column_number": 27, "location_type_id": 1, "phone_type_id": 2},
+      {"name": "street_address", "column_number": 28,  "location_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "city", "column_number": 29, "location_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "country", "column_number": 30, "location_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      { "name": "state_province", "contact_type": "Individual", "column_number": 31, "location_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "email", "column_number": 32, "location_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      { "name": "signature_html", "column_number": 33, "location_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "im", "column_number": 34, "location_type_id": 1, "im_provider_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "url", "column_number": 35, "website_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "phone", "column_number": 36, "location_type_id": 2, "phone_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "phone_ext", "column_number": 37, "location_type_id": 2, "phone_type_id": 1, "relationship_type_id": 4, "relationship_direction": "a_b"},
+      {"name": "organization_name", "column_number": 38, "relationship_type_id": 5, "relationship_direction": "a_b"},
+      { "name": "url", "column_number": 39, "website_type_id": 1, "relationship_type_id": 5, "relationship_direction": "a_b"},
+      {"name": "email", "column_number": 40, "location_type_id": 1, "relationship_type_id": 5, "relationship_direction": "a_b"},
+      {"name": "external_identifier", "column_number": 41, "relationship_type_id": 5, "relationship_direction": "a_b"},
+      {"name": "street_address", "column_number": 42, "location_type_id": 1, "relationship_type_id": 5, "relationship_direction": "a_b"},
+      {"name": "supplemental_address_1", "column_number": 43, "location_type_id": 1, "relationship_type_id": 5, "relationship_direction": "a_b"},
+      {"name": "do_not_import",  "column_number": 44},
+      {"name": "url",  "column_number": 45, "website_type_id": 2},
+
+
+    ],
+    defaults : {"mapping_id.name":"individual_locations_with_related", "contact_type":"Individual", "grouping": 1}
+  })
+);
