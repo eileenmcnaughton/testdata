@@ -1,5 +1,5 @@
 <?php
-
+use CRM_Testdata_ExtensionUtil as E;
 use Civi\Api4\CustomField;
 
 $entities = [

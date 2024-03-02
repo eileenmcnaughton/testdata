@@ -1,5 +1,7 @@
 <?php
 
+use CRM_Testdata_ExtensionUtil as E;
+
 return [
   [
     'name' => 'CustomGroup_MembershipCustom',
