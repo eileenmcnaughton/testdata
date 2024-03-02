@@ -12,7 +12,7 @@ return [
       'version' => 4,
       'values' => [
         'name' => 'Participant',
-        'title' => E::ts('Partcipant'),
+        'title' => E::ts('Participant'),
         'extends' => 'Participant',
         'style' => 'Inline',
         'help_pre' => '',
@@ -28,14 +28,14 @@ return [
     ],
   ],
   [
-    'name' => 'CustomGroup_Partcipant_CustomField_Participant_state_province',
+    'name' => 'CustomGroup_Participant_CustomField_Participant_state_province',
     'entity' => 'CustomField',
     'cleanup' => 'unused',
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
       'values' => [
-        'custom_group_id.name' => 'Partcipant',
+        'custom_group_id.name' => 'Participant',
         'name' => 'Participant_state_province',
         'label' => E::ts('Participant: state province'),
         'data_type' => 'StateProvince',
