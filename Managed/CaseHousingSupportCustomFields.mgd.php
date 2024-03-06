@@ -1,4 +1,5 @@
 <?php
+use CRM_Testdata_ExtensionUtil as E;
 
 $extension = civicrm_api3('extension', 'get', ['key' => 'civi_case', 'sequential' => 1])['values'];
 if (empty($extension[0]) || $extension[0]['status'] !== 'installed') {
