@@ -13,6 +13,9 @@ return [
         'name' => 'Contribution',
         'title' => E::ts('Contribution'),
         'extends' => 'Contribution',
+        'extends_entity_column_value' => [
+          '3',
+        ],
         'style' => 'Inline',
         'help_pre' => '',
         'help_post' => '',
