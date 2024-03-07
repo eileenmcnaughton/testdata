@@ -7,26 +7,27 @@ $extension = civicrm_api3('extension', 'get', ['key' => 'civi_grant', 'sequentia
 if (empty($extension[0]) || $extension[0]['status'] !== 'installed') {
   return [];
 }
-
-
 return [
   [
-    'name' => 'CustomGroup_Grant_Fields',
+    'name' => 'CustomGroup_GrantsPovertyRelief',
     'entity' => 'CustomGroup',
     'cleanup' => 'unused',
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
       'values' => [
-        'name' => 'Grant_Fields',
-        'title' => E::ts('Grant Fields'),
+        'name' => 'GrantsPovertyRelief',
+        'title' => E::ts('GrantsPovertyRelief'),
         'extends' => 'Grant',
+        'extends_entity_column_value' => [
+          '2',
+        ],
         'style' => 'Inline',
         'help_pre' => '',
         'help_post' => '',
-        'weight' => 9,
+        'weight' => 18,
         'collapse_adv_display' => TRUE,
-        'created_date' => '2024-03-02 04:49:49',
+        'created_date' => '2024-03-07 03:42:44',
         'icon' => '',
       ],
       'match' => [
@@ -35,25 +36,26 @@ return [
     ],
   ],
   [
-    'name' => 'CustomGroup_Grant_Fields_CustomField_Ask_yourself_Do_you_feel_lucky_',
+    'name' => 'CustomGroup_GrantsPovertyRelief_CustomField_Estimated_number_of_people_impacted',
     'entity' => 'CustomField',
     'cleanup' => 'unused',
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
       'values' => [
-        'custom_group_id.name' => 'Grant_Fields',
-        'name' => 'Ask_yourself_Do_you_feel_lucky_',
-        'label' => E::ts('Ask yourself Do you feel lucky?'),
-        'data_type' => 'Boolean',
-        'html_type' => 'Radio',
+        'custom_group_id.name' => 'GrantsPovertyRelief',
+        'name' => 'Estimated_number_of_people_impacted',
+        'label' => E::ts('Estimated number of people impacted'),
+        'data_type' => 'Float',
+        'html_type' => 'Text',
         'text_length' => 255,
         'note_columns' => 60,
         'note_rows' => 4,
-        'column_name' => 'ask_yourself_do_you_feel_lucky__65',
+        'column_name' => 'estimated_number_of_people_impac_77',
       ],
       'match' => [
         'name',
+        'custom_group_id',
       ],
     ],
   ],
