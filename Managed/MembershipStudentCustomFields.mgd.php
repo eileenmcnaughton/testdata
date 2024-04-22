@@ -42,7 +42,6 @@ return [
       'values' => [
         'name' => 'MembershipStudent_Procrastination_index',
         'title' => E::ts('MembershipStudent :: Procrastination index'),
-        'data_type' => 'String',
         'is_reserved' => FALSE,
         'option_value_fields' => [
           'name',
@@ -121,6 +120,7 @@ return [
         'name' => 'Procrastination_index',
         'label' => E::ts('Procrastination index'),
         'html_type' => 'Select',
+        'data_type' => 'Int',
         'text_length' => 255,
         'note_columns' => 60,
         'note_rows' => 4,

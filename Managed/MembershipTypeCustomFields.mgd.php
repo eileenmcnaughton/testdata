@@ -6,6 +6,37 @@ if (empty($extension[0]) || $extension[0]['status'] !== 'installed') {
 }
 return [
   [
+    'name' => 'OptionValueExtendsMembershipType',
+    'entity' => 'OptionValue',
+    'cleanup' => 'never',
+    'update' => 'unmodified',
+    'params' => [
+      'version' => 4,
+      'values' => [
+        'option_group_id.name' => 'cg_extend_objects',
+        'label' => 'MembershipTypes',
+        'value' => 'MembershipType',
+        'name' => 'civicrm_membership_type',
+        'grouping' => NULL,
+        'filter' => 0,
+        'is_default' => FALSE,
+        'description' => NULL,
+        'is_optgroup' => FALSE,
+        'is_reserved' => FALSE,
+        'is_active' => TRUE,
+        'icon' => NULL,
+        'color' => NULL,
+        'component_id' => NULL,
+        'domain_id' => NULL,
+        'visibility_id' => NULL,
+      ],
+    ],
+    'match' => [
+      'option_group_id',
+      'name',
+    ],
+  ],
+  [
     'name' => 'CustomGroup_MembershipType',
     'entity' => 'CustomGroup',
     'cleanup' => 'unused',
@@ -30,7 +61,7 @@ return [
     ],
   ],
   [
-    'name' => 'CustomGroup_MembershipType_CustomField_Is_VIP',
+    'name' => 'CustomGroup_MembershipType_CustomField_is_vip',
     'entity' => 'CustomField',
     'cleanup' => 'unused',
     'update' => 'unmodified',
@@ -38,14 +69,13 @@ return [
       'version' => 4,
       'values' => [
         'custom_group_id.name' => 'MembershipType',
-        'name' => 'Is_VIP',
+        'name' => 'is_vip',
         'label' => E::ts('Is VIP'),
         'data_type' => 'Boolean',
         'html_type' => 'Radio',
         'text_length' => 255,
         'note_columns' => 60,
         'note_rows' => 4,
-        'column_name' => 'is_vip_80',
       ],
       'match' => [
         'name',

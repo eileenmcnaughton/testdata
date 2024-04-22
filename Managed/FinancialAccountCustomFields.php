@@ -4,7 +4,39 @@ $extension = civicrm_api3('extension', 'get', ['key' => 'civi_contribute', 'sequ
 if (empty($extension[0]) || $extension[0]['status'] !== 'installed') {
   return [];
 }
+
 return [
+  [
+    'name' => 'OptionValueExtendsFinancialAccount',
+    'entity' => 'OptionValue',
+    'cleanup' => 'never',
+    'update' => 'unmodified',
+    'params' => [
+      'version' => 4,
+      'values' => [
+        'option_group_id.name' => 'cg_extend_objects',
+        'label' => 'Financial Accounts',
+        'value' => 'FinancialAccount',
+        'name' => 'civicrm_financial_account',
+        'grouping' => NULL,
+        'filter' => 0,
+        'is_default' => FALSE,
+        'description' => NULL,
+        'is_optgroup' => FALSE,
+        'is_reserved' => FALSE,
+        'is_active' => TRUE,
+        'icon' => NULL,
+        'color' => NULL,
+        'component_id' => NULL,
+        'domain_id' => NULL,
+        'visibility_id' => NULL,
+      ],
+    ],
+    'match' => [
+      'option_group_id',
+      'name',
+    ],
+  ],
   [
     'name' => 'CustomGroup_financial_account',
     'entity' => 'CustomGroup',
