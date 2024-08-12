@@ -7,7 +7,6 @@ $entities = [
     'name' => 'AddressCustomFields',
     'entity' => 'Mapping',
     'cleanup' => 'unused',
-    'update' => 'unmodified',
     'params' => [
       'version' => 4,
       'values' => [
@@ -38,7 +37,6 @@ foreach ($mappings as $mapping) {
     'name' => 'AddressCustom' . $mapping['column_number'] . $mapping['name'],
     'entity' => 'MappingField',
     'cleanup' => 'unused',
-    'update' => 'unmodified',
     'params' => [
       'version' => 4,
       'values' => array_merge($mapping, ['mapping_id.name' => 'AddressCustomFields']),
