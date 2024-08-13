@@ -79,4 +79,29 @@ return [
       ],
     ],
   ],
+  [
+    'name' => 'CustomGroup_email_quality_CustomField_Snooze_Date',
+    'entity' => 'CustomField',
+    'cleanup' => 'unused',
+    'update' => 'unmodified',
+    'params' => [
+      'version' => 4,
+      'values' => [
+        'custom_group_id.name' => 'email_quality',
+        'name' => 'Snooze_Date',
+        'label' => E::ts('Snooze Date'),
+        'data_type' => 'Date',
+        'html_type' => 'Select Date',
+        'text_length' => 255,
+        'date_format' => 'dd/mm/yy',
+        'note_columns' => 60,
+        'note_rows' => 4,
+        'column_name' => 'snooze_date_81',
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
+    ],
+  ],
 ];
