@@ -12,6 +12,9 @@ use CRM_Testdata_ExtensionUtil as E;
  */
 function testdata_civicrm_config(&$config) {
   _testdata_civix_civicrm_config($config);
+  if (!defined('IMPORT_EXTENSIONS_UPLOAD_FOLDER')) {
+    define('IMPORT_EXTENSIONS_UPLOAD_FOLDER', E::path() . DIRECTORY_SEPARATOR . 'csvs');
+  }
 }
 
 /**
