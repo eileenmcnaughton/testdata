@@ -34,6 +34,9 @@ return [
         'icon' => '',
         'extends_entity_column_id' => NULL,
       ],
+      'match' => [
+        'name',
+      ],
     ],
   ],
   [
@@ -73,6 +76,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -95,6 +102,10 @@ return [
           'label',
           'description',
         ],
+      ],
+      'match' => [
+        'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -123,6 +134,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'option_group_id',
+      ],
     ],
   ],
   [
@@ -149,6 +164,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -177,6 +196,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'option_group_id',
+      ],
     ],
   ],
   [
@@ -203,6 +226,9 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
       ],
     ],
   ],
@@ -244,6 +270,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -266,6 +296,9 @@ return [
           'label',
           'description',
         ],
+      ],
+      'match' => [
+        'name',
       ],
     ],
   ],
@@ -294,6 +327,9 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+      ],
     ],
   ],
   [
@@ -321,6 +357,9 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+      ],
     ],
   ],
   [
@@ -347,6 +386,9 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
       ],
     ],
   ],
@@ -609,6 +651,9 @@ return [
           'description',
         ],
       ],
+      'match' => [
+        'name',
+      ],
     ],
   ],
   [
@@ -635,6 +680,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -663,6 +712,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'option_group_id',
+      ],
     ],
   ],
   [
@@ -690,6 +743,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'option_group_id',
+      ],
     ],
   ],
   [
@@ -716,6 +773,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -757,6 +818,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -796,6 +861,10 @@ return [
         'serialize' => 1,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -837,6 +906,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -875,6 +948,10 @@ return [
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -915,6 +992,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -937,6 +1018,10 @@ return [
           'label',
           'description',
         ],
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -965,6 +1050,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -992,6 +1081,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1018,6 +1111,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1059,6 +1156,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1098,6 +1199,10 @@ return [
         'serialize' => 1,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1139,6 +1244,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1177,6 +1286,10 @@ return [
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1217,6 +1330,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1255,6 +1372,10 @@ return [
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1295,6 +1416,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1333,6 +1458,10 @@ return [
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1373,6 +1502,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1411,6 +1544,10 @@ return [
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1451,6 +1588,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1485,10 +1626,14 @@ return [
         'time_format' => NULL,
         'note_columns' => 60,
         'note_rows' => 4,
-        'column_name' => 'Membership_file_40',
+        'column_name' => 'membership_file',
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1524,10 +1669,14 @@ return [
         'time_format' => NULL,
         'note_columns' => 60,
         'note_rows' => 4,
-        'column_name' => 'Membership_link_41',
+        'column_name' => 'membership_link',
         'serialize' => 0,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -1568,6 +1717,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -1606,6 +1759,10 @@ return [
         'serialize' => 1,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
