@@ -30,6 +30,9 @@ return [
         'icon' => '',
         'extends_entity_column_id' => NULL,
       ],
+      'match' => [
+        'name',
+      ],
     ],
   ],
   [
@@ -69,6 +72,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -91,6 +98,10 @@ return [
           'label',
           'description',
         ],
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -119,6 +130,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -145,6 +160,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -173,6 +192,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -199,6 +222,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -240,6 +267,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -262,6 +293,10 @@ return [
           'label',
           'description',
         ],
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -290,6 +325,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -316,6 +355,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -344,6 +387,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -370,6 +417,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -411,6 +462,10 @@ return [
         'filter' => NULL,
         'in_selector' => FALSE,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -433,6 +488,10 @@ return [
           'label',
           'description',
         ],
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -461,6 +520,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -487,6 +550,10 @@ return [
         'component_id' => NULL,
         'domain_id' => NULL,
         'visibility_id' => NULL,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
@@ -515,6 +582,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+      'match' => [
+        'name',
+        'custom_group_id',
+      ],
     ],
   ],
   [
@@ -542,6 +613,10 @@ return [
         'domain_id' => NULL,
         'visibility_id' => NULL,
       ],
+    ],
+    'match' => [
+      'name',
+      'custom_group_id',
     ],
   ],
   [
@@ -581,6 +656,10 @@ return [
         'serialize' => 1,
         'filter' => NULL,
         'in_selector' => FALSE,
+      ],
+      'match' => [
+        'name',
+        'custom_group_id',
       ],
     ],
   ],
