@@ -2,37 +2,6 @@
 use CRM_Testdata_ExtensionUtil as E;
 return [
   [
-    'name' => 'OptionValueExtendsPhone',
-    'entity' => 'OptionValue',
-    'cleanup' => 'never',
-    'update' => 'unmodified',
-    'params' => [
-      'version' => 4,
-      'values' => [
-        'option_group_id.name' => 'cg_extend_objects',
-        'label' => 'Phones',
-        'value' => 'Phone',
-        'name' => 'civicrm_phone',
-        'grouping' => NULL,
-        'filter' => 0,
-        'is_default' => FALSE,
-        'description' => NULL,
-        'is_optgroup' => FALSE,
-        'is_reserved' => FALSE,
-        'is_active' => TRUE,
-        'icon' => NULL,
-        'color' => NULL,
-        'component_id' => NULL,
-        'domain_id' => NULL,
-        'visibility_id' => NULL,
-      ],
-    ],
-    'match' => [
-      'option_group_id',
-      'name',
-    ],
-  ],
-  [
     'name' => 'CustomGroup_phone',
     'entity' => 'CustomGroup',
     'cleanup' => 'unused',
