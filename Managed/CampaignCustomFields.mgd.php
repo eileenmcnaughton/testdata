@@ -49,6 +49,7 @@ return [
         'column_name' => 'soft_target_75',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

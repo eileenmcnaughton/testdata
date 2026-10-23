@@ -48,6 +48,7 @@ return [
         'column_name' => 'meeting_impressions_69',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

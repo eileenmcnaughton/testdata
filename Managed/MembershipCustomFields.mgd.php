@@ -105,7 +105,6 @@ return [
       ],
       'match' => [
         'name',
-        'option_group_id',
       ],
     ],
   ],
@@ -229,6 +228,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -329,6 +329,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -359,6 +360,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -389,6 +391,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -399,6 +402,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'MembershipCustom_Membership_Radio',
         'label' => 'Radio4',
@@ -426,6 +430,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['custom_group_id', 'name'],
       'values' => [
         'custom_group_id.name' => 'MembershipCustom',
         'name' => 'Membership_Radio',
@@ -466,6 +471,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name'],
       'values' => [
         'name' => 'MembershipCustom_Membership_checkboxes',
         'title' => 'MembershipCustom :: Membership-checkboxes',
@@ -489,6 +495,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'MembershipCustom_Membership_checkboxes',
         'label' => 'Checkbox1',
@@ -516,6 +523,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'MembershipCustom_Membership_checkboxes',
         'label' => 'Checkbox2',
@@ -543,6 +551,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'MembershipCustom_Membership_checkboxes',
         'label' => 'Checkbox3',
@@ -570,6 +579,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'MembershipCustom_Membership_checkboxes',
         'label' => 'Checkbox4',
@@ -597,6 +607,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['custom_group_id', 'name'],
       'values' => [
         'custom_group_id.name' => 'MembershipCustom',
         'name' => 'Membership_checkboxes',
@@ -1021,7 +1032,6 @@ return [
       ],
       'match' => [
         'name',
-        'custom_group_id',
       ],
     ],
   ],
@@ -1052,7 +1062,7 @@ return [
       ],
       'match' => [
         'name',
-        'custom_group_id',
+        'option_group_id',
       ],
     ],
   ],
@@ -1083,7 +1093,7 @@ return [
       ],
       'match' => [
         'name',
-        'custom_group_id',
+        'option_group_id',
       ],
     ],
   ],
@@ -1114,7 +1124,7 @@ return [
       ],
       'match' => [
         'name',
-        'custom_group_id',
+        'option_group_id',
       ],
     ],
   ],
