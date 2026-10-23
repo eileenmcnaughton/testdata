@@ -9,6 +9,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name'],
       'values' => [
         'name' => 'Education',
         'title' => 'Education',
@@ -39,6 +40,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name'],
       'values' => [
         'name' => 'Education_Level',
         'title' => 'Education :: Level',
@@ -62,6 +64,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'Education_Level',
         'label' => 'Elementary',
@@ -89,6 +92,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'Education_Level',
         'label' => 'Secondary',
@@ -116,6 +120,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['name', 'option_group_id'],
       'values' => [
         'option_group_id.name' => 'Education_Level',
         'label' => 'Post-Secondary',
@@ -143,6 +148,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['custom_group_id', 'name'],
       'values' => [
         'custom_group_id.name' => 'Education',
         'name' => 'Level',
@@ -183,6 +189,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['custom_group_id', 'name'],
       'values' => [
         'custom_group_id.name' => 'Education',
         'name' => 'School',
@@ -222,6 +229,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['custom_group_id', 'name'],
       'values' => [
         'custom_group_id.name' => 'Education',
         'name' => 'Start_Year',
@@ -261,6 +269,7 @@ return [
     'update' => 'unmodified',
     'params' => [
       'version' => 4,
+      'match' => ['custom_group_id', 'name'],
       'values' => [
         'custom_group_id.name' => 'Education',
         'name' => 'End_Year',

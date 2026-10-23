@@ -48,6 +48,7 @@ return [
         'column_name' => 'is_custodial_72',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

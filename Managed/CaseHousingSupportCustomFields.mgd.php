@@ -53,6 +53,7 @@ return [
         'column_name' => 'number_of_bedrooms_required_71',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

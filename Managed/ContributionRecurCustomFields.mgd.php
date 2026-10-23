@@ -52,6 +52,7 @@ return [
         'column_name' => 'when_shall_we_upsell_76',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

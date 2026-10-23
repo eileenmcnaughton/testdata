@@ -51,6 +51,7 @@ return [
         'column_name' => 'associated_documenttion_73',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],
@@ -74,6 +75,7 @@ return [
         'column_name' => 'jurisdiction_74',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

@@ -46,6 +46,7 @@ return [
         'column_name' => 'target_completion_date_67',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

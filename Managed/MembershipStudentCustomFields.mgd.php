@@ -69,6 +69,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -87,6 +88,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],
@@ -105,6 +107,7 @@ return [
       ],
       'match' => [
         'name',
+        'option_group_id',
       ],
     ],
   ],

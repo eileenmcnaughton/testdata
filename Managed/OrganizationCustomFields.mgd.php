@@ -45,6 +45,7 @@ return [
         'column_name' => 'terms_of_service_70',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],

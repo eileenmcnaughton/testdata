@@ -53,6 +53,7 @@ return [
         'column_name' => 'ask_yourself_do_you_feel_lucky__65',
       ],
       'match' => [
+        'custom_group_id',
         'name',
       ],
     ],
